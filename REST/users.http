@@ -1,0 +1,26 @@
+@UserID = 1
+
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/{{UserID}}
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": ""
+}
+
+###
+
+PATCH http://localhost:3000/users/{{UserID}}
+
+###
+
+DELETE http://localhost:3000/users/{{UserID}}
+
+###
