@@ -1,0 +1,29 @@
+@CommentID = 65facb2dde4f41dc74φ915085
+
+GET http://localhost:3000/comments
+
+###
+
+GET http://localhost:3000/comments?parentID={{CommentID}}
+
+###
+
+GET http://localhost:3000/comments/{{CommentID}}
+
+###
+
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+}
+
+###
+
+PATCH http://localhost:3000/comments/{{CommentID}}
+
+###
+
+DELETE http://localhost:3000/comments/{{CommentID}}
+
+###
